@@ -3,7 +3,7 @@ import numpy as np
 import re
 
 ## Read the Data File
-Datafile_init = pd.DataFrame(pd.read_excel(r'C:\Users\张靖\Desktop\GPIO0-GPIO68_Pins.xlsx'))
+Datafile_init = pd.DataFrame(pd.read_excel(r'root_path\GPIO0-GPIO68_Pins.xlsx'))
 GpioList  = list(Datafile_init.iloc[:,0])
 Datafile_init = Datafile_init.iloc[:, 1:] # Remove the first column
 Datafile_init = Datafile_init.fillna(0)
