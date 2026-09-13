@@ -2,11 +2,9 @@ import cvxpy as cp
 import numpy as np
 from Syspara import *
 from DataDeal import ParaMatrix,FuncMatrix,Datafile_init
-# 查看已安装好的求解器
-# print(cp.installed_solvers())
 Mfunc = FuncMatrix
 Mpara = ParaMatrix
-solver = cp.CPLEX
+solver = cp.xxx  # Use your useful solver
 
 # Variables
 Xepwm = cp.Variable((NumEpwm, 1), boolean=True)
